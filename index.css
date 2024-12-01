@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: "Georgia";
+  }
+  
+  h1,h2 {
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .header {
+    color: white;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .charges-container {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+  }
+  
+  .charges-fixes, .charges-variables {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  table {
+    border-spacing: 0;
+  }
+  
+  td {
+    border: 2px solid black;
+    padding: 10px;
+  }
+  
+  thead td {
+    background-color: black;
+    color: white;
+  }
+  
+  thead td:nth-child(2) {
+    border-left: 2px solid white;
+  }
+  
+  thead td:nth-child(1) {
+    border-right: 2px solid white;
+  }
+  
+  table {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  
+  .calcul-seuil > h1 {
+    color: hsl(217, 33%, 17%);
+    border-top: 2px solid black;
+    padding: 20px;
+  }
+  
+  .calcul-seuil > p {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  @media screen and (width < 796px) {
+    .charges-container {
+      flex-direction: column;
+    }
+  }

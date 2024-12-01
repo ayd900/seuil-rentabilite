@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seuil de Rentabilite</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <h1>SEUIL DE RENTABILITE</h1>
+      </div>
+      <div class="charges-container">
+        <div class="charges-fixes">
+          <h2>CHARGES FIXES</h2>
+          <table>
+            <thead>
+              <tr>
+                <td>SERVICE</td>
+                <td>PRIX (€/mois)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pilot</td>
+                <td>12.500</td>
+              </tr>
+              <tr>
+                <td>Ingénieur système</td>
+                <td>12.500</td>
+              </tr>
+              <tr>
+                <td>Spécialiste de la mission</td>
+                <td>10.000</td>
+              </tr>
+              <tr>
+                <td>Systèmes de support de vie</td>
+                <td>30.000</td>
+              </tr>
+              <tr>
+                <td>Surveillance de la tour</td>
+                <td>25.000</td>
+              </tr>
+              <tr>
+                <td>Formation de remise à niveau</td>
+                <td>10.000</td>
+              </tr>
+              <tr>
+                <td>Maintenance des installations de formation</td>
+                <td>30.000</td>
+              </tr>
+              <tr>
+                <td>Maintenance des installations de lancement</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>Assurance de l'équipage</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>Assurance en orbite</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>Assurance client</td>
+                <td>75.000</td>
+              </tr>
+              <tr>
+                <td>Recherche et développement</td>
+                <td>50.000</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>TOTAL: 405.000 €/mois</h2>
+        </div>
+        <div class="charges-variables">
+          <h2>CHARGES VARIABLES</h2>
+          <table>
+            <thead>
+              <tr>
+                <td>SERVICE</td>
+                <td>PRIX (€/vol)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Carburant</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>Vérifications Techniques et Inspection de Fusee</td>
+                <td>10.000</td>
+              </tr>
+              <tr>
+                <td>Consommables pour les passagers</td>
+                <td>2.000</td>
+              </tr>
+              <tr>
+                <td>Animation evenements speciaux</td>
+                <td>10.000</td>
+              </tr>
+              <tr>
+                <td>Assurance a court terme</td>
+                <td>25.000</td>
+              </tr>
+              <tr>
+                <td>Gestion dechets post-vol</td>
+                <td>15.000</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>TOTAL: 112.000 €/vol</h2>
+        </div>
+      </div>
+      <div class="calcul-seuil">
+        <h1>Calcul du seuil de rentabilite</h1>
+        <p>Charges fixes mensuelles (CFM): <strong>405.000 €</strong></p>
+        <p>Charges variables par vol (CVV): <strong>112.000 €</strong></p>
+        <p>Prix par vol (PPV): <strong>250.000 €</strong></p>
+        <p>Seuil de rentabilite (nombre de vols) = <strong>CFM / (PPV - CVV)</strong></p>
+        <p>Seuil de rentabilite: <strong>405.000 € / (250.000 € - 112.000 €) = 2.93</strong></p>
+        <p>Il faut un minimum de <strong>3 voyages</strong> par mois pour etre rentable, le point mort est <strong>2.93 ≈ 3</strong>, nous on est à <strong>6 voyages</strong> par mois, donc bien <span class="green"><strong>rentable</strong></span> !</p>
+      </div>      
+</body>
+</html>
